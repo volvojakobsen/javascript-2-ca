@@ -1,0 +1,62 @@
+@import "variables.scss";
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+$primary: #8bdb7d;
+$post: #59d936;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 1 100%;
+}
+
+.h-center {
+  text-align: center;
+}
+
+.o-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: $primary;
+}
+
+.container-xl {
+  background-color: $primary;
+}
+
+.profile-pictures {
+  max-width: 20%;
+  height: fit-content;
+}
+
+.post-text-content {
+  background-color: aliceblue;
+}
+
+.card-body {
+  background-color: $post;
+}
+
+.profile-post {
+  flex: 1 1 100%;
+}
+
+.copyright {
+  text-align: center;
+}

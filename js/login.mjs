@@ -7,24 +7,40 @@ loginForm.addEventListener("submit", event => {
     const formData = new FormData(loginForm);
     const data = Object.fromEntries(formData);
     console.log(data);
-    login();
-
-})
-
-
-async function login() {
-    await fetch(loginURL, {
-        method: 'POST', body: JSON.stringify({
+    fetch(loginURL, {
+        method: 'POST', body: JSON.stringify(
             data
-        }),
+        ),
         headers: {
             'Content-type': 'application/json; charset=UTF-8',
         },
     })
         .then((response) => response.json())
-        .then((json) => console.log(json));
+        .then((json) => localStorage.setItem('accessToken', json.accessToken));
+
+});
+
+/*
+async function login(data) {
+    try {
+        await fetch(loginURL, {
+            method: 'POST', body: JSON.stringify(
+                data
+            ),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+        })
+            .then((response) => response.json())
+            .then((json) => localStorage.setItem('accessToken', json.accessToken))
+    }
+    catch (error) {
+        console.log("error")
+    }
+
 }
 
 
 
 
+*/

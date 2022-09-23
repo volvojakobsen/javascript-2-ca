@@ -6,15 +6,29 @@ const registerForm = document.getElementById("register_form");
 const registerURL = "https://nf-api.onrender.com/api/v1/social/auth/register"
 
 registerForm.addEventListener("submit", event => {
-    event.preventDefault();
-    const formData = new FormData(registerForm);
-    const data = Object.fromEntries(formData);
-    console.log(data);
-    .then(register());
+    try {
+        event.preventDefault();
+        const formData = new FormData(registerForm);
+        const data = Object.fromEntries(formData);
+        console.log(data);
+        fetch(registerURL, {
+            method: 'POST', body: JSON.stringify(data),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+        })
+            .then((response) => response.json())
+            .then((json) => console.log(json));
 
-})
-
-
+    }
+    catch (error) {
+        console.log("an error occured")
+    }
+    finally {
+        console.log("code ran");
+    }
+});
+/*
 async function register() {
     await fetch(registerURL, {
         method: 'POST', body: JSON.stringify({

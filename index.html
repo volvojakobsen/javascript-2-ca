@@ -47,15 +47,15 @@
   </div>
   <div>
     <main>
-      <form>
+      <form class="createPost">
         <div class="container d-flex flex-column front-form my-3">
           <h1 class="text-center">Write a new post</h1>
           <label for="subject" class="form-label">Subject</label>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+          <input type="text" name="title" class="form-control form-title" id="exampleInputEmail1" aria-describedby="emailHelp" />
           <div id="emailHelp" class="form-text">
             We'll never share your email with anyone else.
           </div>
-          <textarea name="message" id="message" cols="30" rows="10" class="form__input text_area mb-3"
+          <textarea name="body" id="message" cols="30" rows="10" class="form__input form-body text_area mb-3"
             placeholder="message"></textarea>
           <button type="submit" class="btn mb-3 btn-primary">Submit</button>
         </div>
@@ -70,6 +70,7 @@
   </footer>
   <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/fetchPosts.mjs"></script>
+  <script src="js/post.mjs"></script>
 </body>
 
 </html>

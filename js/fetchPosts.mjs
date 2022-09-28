@@ -1,4 +1,4 @@
-const fetchURL = "https://nf-api.onrender.com/api/v1/social/posts"
+const fetchURL = "https://nf-api.onrender.com/api/v1/social/posts/?_author=true&_comments=true&reactions=true";
 
 const Authorization = localStorage.getItem(`accessToken`);
 
@@ -28,9 +28,10 @@ async function getAndDisplayPosts() {
               </div>
               <div class="col-md-8">
                 <div class="card-body">
+                  <h2 class="card-title">${json[i].author.name}</h2>
                   <h5 class="card-title">${json[i].title}</h5>
                   <p class="card-text">${json[i].body}</p>
-                  <p class="card-text"><small class="text-muted">Last updated ${json[i].updated}</small></p>
+                  <p class="card-text"><small class="text-muted">Last updated ${json[i].updated}. id: ${json[i].id}</small></p>
                 </div>
               </div>
             </div>

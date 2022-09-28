@@ -5,17 +5,12 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="dist/css/custom.css" />
-  <title>Title</title>
+  <title>Boomer Forum | Home</title>
 </head>
 
-<body>
+<body class="min-vh-100 d-flex flex-column">
   <div class="container-xl">
     <header class="d-flex flexwrap justify-content-center py-3 mb-4 border-bottom">
       <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
@@ -28,6 +23,15 @@
         </svg>
         <span class="fs-4">Boomer Forum</span>
       </a>
+      <form>
+        <div class="mb-4">
+          <div class="d-flex flex-row s-1">
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="search">
+            <button type="submit" class="btn btn-primary">Search</button>
+          </div>
+        </div>
+      </form>
       <ul class="nav nav-pills">
         <li class="nav-item">
           <a href="index.html" class="nav-link">HOME</a>
@@ -43,20 +47,9 @@
   </div>
   <div>
     <main>
-      <div class="container">
-        <form>
-          <div class="mb-4">
-            <div class="d-flex flex-row s-1">
-              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                placeholder="search">
-              <button type="submit" class="btn btn-primary">Search</button>
-            </div>
-          </div>
-        </form>
-      </div>
       <form>
         <div class="container d-flex flex-column front-form my-3">
-          <h1 class="h-center">Write a new post</h1>
+          <h1 class="text-center">Write a new post</h1>
           <label for="subject" class="form-label">Subject</label>
           <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
           <div id="emailHelp" class="form-text">
@@ -68,112 +61,15 @@
         </div>
       </form>
   </div>
-  <div class="container posts my-3 d-flex flex-column flexwrap">
-    <h2 class="h-center m-3">Most recent posts</h2>
-    <div class="card-body m-3">
-      <div class="post-id d-flex">
-        <img src="/images/Peter-Griffin.jpg" alt="profile picture of peter griffin" class="profile-pictures m-3">
-        <div class="m-3 post">
-          <h5 class="card-title">by:</h5>
-          <h4>Peter Griffin</h4>
-          <a href="#" class="btn m-3 btn-primary">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill"
-              viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
-            </svg>
-            <span> Like</span>
-          </a>
-        </div>
-      </div>
-      <div class="post-text-content m-3">
-        <p class="card-text m-3">i was here first! nenenenenennee....</p>
-      </div>
-    </div>
-    <div class="card-body m-3">
-      <div class="post-id d-flex">
-        <img src="/images/index.jpg" alt="profile picture of randy march" class="profile-pictures m-3">
-        <div class="m-3 post">
-          <h5 class="card-title">by:</h5>
-          <h4>Randy Marsh</h4>
-          <a href="#" class="btn m-3 btn-primary">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill"
-              viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
-            </svg>
-            <span> Like</span>
-          </a>
-        </div>
-      </div>
-      <div class="post-text-content m-3">
-        <p class="card-text m-3">witch party at my house tonight!</p>
-      </div>
-    </div>
-    <div class="card-body m-3">
-      <div class="post-id d-flex">
-        <img src="/images/gerald.jpg" alt="profile picture of peter griffin" class="profile-pictures m-3">
-        <div class="m-3 post">
-          <h5 class="card-title">by:</h5>
-          <h4>G. Broflovski</h4>
-          <a href="#" class="btn m-3 btn-primary">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill"
-              viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
-            </svg>
-            <span> Like</span>
-          </a>
-        </div>
-      </div>
-      <div class="post-text-content m-3">
-        <p class="card-text m-3">will there be crack and wiskey?</p>
-      </div>
-    </div>
-    <div class="card-body m-3">
-      <div class="post-id d-flex">
-        <img src="/images/index.jpg" alt="profile picture of peter griffin" class="profile-pictures m-3">
-        <div class="m-3 post">
-          <h5 class="card-title">by:</h5>
-          <h4>Randy Marsh</h4>
-          <a href="#" class="btn m-3 btn-primary">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill"
-              viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
-            </svg>
-            <span> Like</span>
-          </a>
-        </div>
-      </div>
-      <div class="post-text-content m-3">
-        <p class="card-text m-3">it would not be a witch party without.</p>
-      </div>
-    </div>
-    <div class="card-body m-3">
-      <div class="post-id d-flex">
-        <img src="/images/Peter-Griffin.jpg" alt="profile picture of peter griffin" class="profile-pictures m-3">
-          <div class="m-3 post">            <h5 class="card-title">by:</h5>
-          <h4>Peter Griffin</h4>
-          <a href="#" class="btn m-3 btn-primary">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-heart-fill" viewBox="0 0 16 16">                <path fill-rule="evenodd"
-                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
-            </svg>
-            <span> Like</span>
-          </a>
-        </div>
-        </div>        <div class="post-text-content m-3">
-        <p class="card-text m-3">can i come?</p>
-      </div>
-    </div>
-  </div>
+  <div class="container posts displayPosts my-3"></div>
   </main>
   <footer>
-    <div class="container">
+    <div class="container text-center">
       <p class="copyright">Copyright © 2022 Boomer Forum</p>
     </div>
   </footer>
   <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
+  <script src="js/fetchPosts.mjs"></script>
 </body>
 
 </html>

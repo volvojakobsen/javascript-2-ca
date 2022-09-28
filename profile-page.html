@@ -1,26 +1,15 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"
-    ></script>
 
     <link rel="stylesheet" href="dist/css/custom.css" />
-    <title>Title</title>
+    <title>boomer Forum | profile page</title>
   </head>
-  <body>
+  <body class="min-vh-100 d-flex flex-column">
     <div class="container">
       <header
         class="d-flex flexwrap justify-content-center py-3 mb-4 border-bottom"
@@ -46,6 +35,15 @@
           </svg>
           <span class="fs-4">Boomer Forum</span>
         </a>
+        <form>
+          <div class="mb-4">
+            <div class="d-flex flex-row s-1">
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="search">
+              <button type="submit" class="btn btn-primary">Search</button>
+            </div>
+          </div>
+        </form>
         <ul class="nav nav-pills">
           <li class="nav-item">
             <a href="index.html" class="nav-link">HOME</a>
@@ -60,28 +58,28 @@
       </header>
     </div>
     <main>
-      <h1 class="h-center">Profile</h1>
+      <h1 class="text-center">Profile</h1>
       <div class="container d-flex">
-        <div style="width: 30%">
+        <div class="col-4">
           <img
             src="/images/profile.jpg"
-            style="max-width: 300px"
+            class="img-fluid"
             alt="profile picture"
           />
         </div>
-        <div class="h-center" style="width: 50%">
+        <div class="text-center col-5">
           <h2>user info</h2>
-          <div class="d-flex">
-            <div class="h-center" style="width: 50%">
+          <div class="row">
+            <div class="text-center col-5" >
               <p>name:</p>
               <p>email:</p>
               <p>age:</p>
               <p>gender:</p>
               <p>password:</p>
             </div>
-            <div class="h-center" style="width: 50%">
+            <div class="text-center col">
               <p>Andy Bobandy</p>
-              <p>doxingMyself@wikkileaks.no</p>
+              <p>self@self.no</p>
               <p>32</p>
               <p>male</p>
               <button type="button" class="btn btn-primary btn-sm">
@@ -90,160 +88,102 @@
             </div>
           </div>
           <h2>Contacts</h2>
-          <div class="d-flex">
-            <div style="width: 50%">
+          <div class="row row-cols-2">
+            <div>
               <a href="#"><p>Peter Griffin</p></a>
               <a href="#"><p>randy marsh</p></a>
               <a href="#"><p>G. Broflovski</p></a>
               <a href="#"><p>rick sanchez</p></a>
             </div>
+            <div>
+              <a href="#"><p>lois Griffin</p></a>
+              <a href="#"><p>Sharon marsh</p></a>
+              <a href="#"><p>Sheila Broflovski</p></a>
+              <a href="#"><p>bird person</p></a>
+            </div>
           </div>
         </div>
       </div>
-      <h2 class="h-center">Most recent</h2>
-      <div class="container my-3 d-flex flexwrap">
-        <div
-          class="card-body m-4 wrap"
-          style="width: 20rem; background-color: rgb(105, 159, 168)"
-        >
-          <div class="m-3">
-            <h5 class="card-title">by:</h5>
-            <h4>Peter Griffin</h4>
+      <h2 class="text-center">Most recent</h2>
+      <div class="container my-3 d-flex flex-wrap o-centers">
+        <div class="card col-4" >
+          <img src="images/Peter-Griffin.jpg" class="card-img-top" alt="peter-profile pic img-fluid" >
+          <div class="card-body">
+            <h5 class="card-title">Peter-Griffin</h5>
+            <p class="card-text">i was here first nehehehehe.</p>
+            <a href="#" class="btn m-3 btn-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-heart-fill" viewBox="0 0 16 16">                <path fill-rule="evenodd"
+                  d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+              </svg>
+              <span> Like</span>
+            </a>
           </div>
-          <p class="card-text m-3">i was here first! nenenenenennee....</p>
-          <a href="#" class="btn m-3 btn-primary">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-heart-fill"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
-              />
-            </svg>
-            <span> Like</span>
-          </a>
         </div>
-        <div
-          class="card-body m-4"
-          style="width: 20rem; background-color: rgb(105, 159, 168)"
-        >
-          <div class="m-3">
-            <h5 class="card-title">by:</h5>
-            <h4>Randy marsh</h4>
+        <div class="card col-4" >
+          <img src="images/index.jpg" class="card-img-top img-fluid" alt="profile-pic randy">
+          <div class="card-body">
+            <h5 class="card-title">Randy Marsh</h5>
+            <p class="card-text">witch party at my house tonight!</p>
+            <a href="#" class="btn m-3 btn-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-heart-fill" viewBox="0 0 16 16">                <path fill-rule="evenodd"
+                  d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+              </svg>
+              <span> Like</span>
+            </a>
           </div>
-          <p class="card-text m-3">witch party at my house tonight!</p>
-          <a href="#" class="btn m-3 btn-primary">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-heart-fill"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
-              />
-            </svg>
-            <span> Like</span>
-          </a>
         </div>
-        <div
-          class="card-body m-4"
-          style="width: 20rem; background-color: rgb(105, 159, 168)"
-        >
-          <div class="m-3">
-            <h5 class="card-title">by:</h5>
-            <h4>G. Broflovski</h4>
+        <div class="card col-4">
+          <img src="images/gerald.jpg" class="card-img-top img-fluid" alt="profile.pic gerald" >
+          <div class="card-body">
+            <h5 class="card-title">Gerald Broflovski</h5>
+            <p class="card-text">will there be crack and wiskey?</p>
+            <a href="#" class="btn m-3 btn-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-heart-fill" viewBox="0 0 16 16">                <path fill-rule="evenodd"
+                  d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+              </svg>
+              <span> Like</span>
+            </a>
           </div>
-          <p class="card-text m-3">will there be crack and wiskey?</p>
-          <a href="#" class="btn m-3 btn-primary">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-heart-fill"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
-              />
-            </svg>
-            <span> Like</span>
-          </a>
         </div>
-        <div
-          class="card-body m-4"
-          style="width: 20rem; background-color: rgb(105, 159, 168)"
-        >
-          <div class="m-3">
-            <h5 class="card-title">by:</h5>
-            <h4>Randy Marsh</h4>
+        <div class="card col-4" >
+          <img src="images/index.jpg" class="card-img-top img-fluid" alt="profile-pic randy">
+          <div class="card-body">
+            <h5 class="card-title">Randy Marsh</h5>
+            <p class="card-text">it would not be a witch party without.</p>
+            <a href="#" class="btn m-3 btn-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-heart-fill" viewBox="0 0 16 16">                <path fill-rule="evenodd"
+                  d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+              </svg>
+              <span> Like</span>
+            </a>
           </div>
-          <p class="card-text m-3">it would not be a witch party without.</p>
-          <a href="#" class="btn m-5 btn-primary">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-heart-fill"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
-              />
-            </svg>
-            <span> Like</span>
-          </a>
         </div>
-        <div
-          class="card-body m-4"
-          style="width: 20rem; background-color: rgb(105, 159, 168)"
-        >
-          <div class="m-3">
-            <h5 class="card-title">by:</h5>
-            <h4>Peter Griffin</h4>
+        <div class="card col-4" >
+          <img src="images/Peter-Griffin.jpg" class="card-img-top img-fluid" alt="profile-pic Peter-Griffin">
+          <div class="card-body">
+            <h5 class="card-title">Peter Griffin</h5>
+            <p class="card-text">can i come?</p>
+            <a href="#" class="btn m-3 btn-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-heart-fill" viewBox="0 0 16 16">                <path fill-rule="evenodd"
+                  d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+              </svg>
+              <span> Like</span>
+            </a>
           </div>
-          <p class="card-text m-3">can i come?</p>
-          <a href="#" class="btn m-5 btn-primary">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-heart-fill"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
-              />
-            </svg>
-            <span> Like</span>
-          </a>
         </div>
+      </div>
       </div>
     </main>
     <footer>
       <div class="container">
-        <p class="copyright">Copyright © 2022 Boomer Forum</p>
+        <p class="copyright text-center">Copyright © 2022 Boomer Forum</p>
       </div>
     </footer>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

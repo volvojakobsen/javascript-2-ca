@@ -16,9 +16,16 @@ loginForm.addEventListener("submit", event => {
         },
     })
         .then((response) => response.json())
-        .then((json) => localStorage.setItem('accessToken', json.accessToken));
+        .then((json) => storeUser(json));
+
 
 });
+
+function storeUser(json) {
+    localStorage.setItem('email', json.email);
+    localStorage.setItem('username', json.name);
+    localStorage.setItem('accessToken', json.accessToken)
+}
 
 /*
 async function login(data) {

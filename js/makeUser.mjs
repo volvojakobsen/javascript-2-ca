@@ -11,6 +11,7 @@ registerForm.addEventListener("submit", event => {
         const formData = new FormData(registerForm);
         const data = Object.fromEntries(formData);
         console.log(data);
+        localStorage.setItem(`password`, data.password);
         fetch(registerURL, {
             method: 'POST', body: JSON.stringify(data),
             headers: {

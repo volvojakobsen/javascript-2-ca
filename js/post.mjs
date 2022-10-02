@@ -6,7 +6,6 @@ const requestOptions = {
     body: JSON.stringify({
         title: postForm.title.value,
         body: postForm.body.value,
-        userId: 1,
     }),
     headers: {
         'Content-type': 'application/json; charset=UTF-8', Authorization: 'Bearer ' + Authorization,

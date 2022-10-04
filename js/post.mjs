@@ -1,5 +1,7 @@
 const postForm = document.querySelector(".createPost");
 
+const Authorization = localStorage.getItem(`accessToken`);
+const fetchURL = "https://nf-api.onrender.com/api/v1/social/posts"
 
 const requestOptions = {
     method: 'POST',
@@ -29,6 +31,6 @@ postForm.addEventListener("submit", event => {
 
     }
     catch (error) {
-
+        console.log(error)
     }
 });

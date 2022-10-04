@@ -17,6 +17,7 @@ loginForm.addEventListener("submit", event => {
     })
         .then((response) => response.json())
         .then((json) => storeUser(json));
+    location.href = `/profile-page.html`
 
 
 });

@@ -1,3 +1,5 @@
+
+
 const fetchURL = "https://nf-api.onrender.com/api/v1/social/posts/?_author=true&_comments=true&reactions=true";
 
 const Authorization = localStorage.getItem(`accessToken`);
@@ -6,17 +8,19 @@ const postContainer = document.querySelector(".displayPosts");
 
 let limit = 20;
 
+
 const options = {
   headers: {
     Authorization: 'Bearer ' + Authorization
   },
 }
-
-async function getAndDisplayPosts() {
+/*
+export async function getAndDisplayPosts() {
   try {
     const response = await fetch(fetchURL, options);
     const json = await response.json();
     console.log(json)
+    postContainer.innerHTML = "";
     for (let i = 0; i < json.length; i++) {
       if (i === limit) {
         break;
@@ -107,7 +111,9 @@ async function getAndDisplayPosts() {
   catch (error) {
     console.log(error);
   }
+
 }
 
 
 getAndDisplayPosts();
+*/

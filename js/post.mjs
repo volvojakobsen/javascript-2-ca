@@ -8,7 +8,7 @@ const requestOptions = {
         body: postForm.body.value,
     }),
     headers: {
-        'Content-type': 'application/json; charset=UTF-8', Authorization: 'Bearer ' + Authorization,
+        'Content-Type': 'application/json; charset=UTF-8', Authorization: 'Bearer ' + Authorization,
     },
 };
 
